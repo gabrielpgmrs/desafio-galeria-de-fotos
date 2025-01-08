@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #1f2937;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  main {
+    padding: 2rem;
+  }
+}
+
+.search-container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  position: relative;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  border: 1px solid #1b1a1a;
+  border-radius: 0.5rem;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
+.search-container button {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 480px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .photo-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .photo-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.photo-card {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.photo-card:hover {
+  transform: scale(1.05);
+}
+
+.photo-card img {
+  width: 100%;
+  height: clamp(150px, 30vw, 200px);
+  object-fit: cover;
+}
+
+.photo-card h3 {
+  padding: 1rem;
+  text-align: center;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  color: #333;
+}
+
+.no-results {
+  text-align: center;
+  color: #666;
+  padding: 2rem;
+  grid-column: 1 / -1;
+}
+
+footer {
+  background-color: #1f2937;
+  color: #9ca3af;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: clamp(0.75rem, 2vw, 1rem);
+}
+
+@media (max-width: 380px) {
+  main {
+    padding: 0.5rem;
+  }
+
+  .photo-card {
+    margin: 0 0.5rem;
+  }
+
+  .search-container {
+    width: 95%;
+  }
+}
