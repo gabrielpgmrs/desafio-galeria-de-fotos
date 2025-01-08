@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria de Fotos</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Galeria de Fotos</h1>
+    </header>
+
+    <main>
+      <div class="search-container">
+        <input type="text" id="search" placeholder="Pesquise aqui..." />
+        <button onclick="window.location.reload()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="photo-grid" id="photoGrid">
+        <div class="photo-card" data-title="Pastor Alemão">
+          <img src="/img/img1.jpg" alt="Pastor Alemão" />
+          <h3>Pastor Alemão</h3>
+        </div>
+        <div class="photo-card" data-title="Buldogue">
+          <img src="/img/img2.jpg" alt="Buldogue" />
+          <h3>Buldogue</h3>
+        </div>
+        <div class="photo-card" data-title="Labrador Retriever">
+          <img src="/img/img3.jpg" alt="Labrador Retriever" />
+          <h3>Labrador Retriever</h3>
+        </div>
+        <div class="photo-card" data-title="Buldogue-francês">
+          <img src="/img/img4.jpg" alt="Buldogue-francês" />
+          <h3>Buldogue-francês</h3>
+        </div>
+        <div class="photo-card" data-title="Golden Retriever">
+          <img src="/img/img5.jpg" alt="Golden Retriever" />
+          <h3>Golden Retriever</h3>
+        </div>
+        <div class="photo-card" data-title="Husky Siberiano">
+          <img src="/img/img6.jpg" alt="Husky Siberiano" />
+          <h3>Husky Siberiano</h3>
+        </div>
+        <div class="photo-card" data-title="Rottweiler">
+          <img src="/img/img7.jpg" alt="Rottweiler" />
+          <h3>Rottweiler</h3>
+        </div>
+        <div class="photo-card" data-title="Shih Tzu">
+          <img src="/img/img8.jpg" alt="Shih Tzu" />
+          <h3>Shih Tzu</h3>
+        </div>
+        <div class="photo-card" data-title="Cão salsicha">
+          <img src="/img/img9.jpg" alt="Cão salsicha" />
+          <h3>Cão salsicha</h3>
+        </div>
+        <div class="photo-card" data-title="São Bernardo">
+          <img src="/img/img10.jpg" alt="São Bernardo" />
+          <h3>São Bernardo</h3>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2024 Galeria de Fotos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/scripts/script.js"></script>
+  </body>
+</html>
